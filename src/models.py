@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+"""
+VAE/AE model architectures
+"""
+
 from tensorflow.keras import backend as K
 from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Input, Dense, Lambda

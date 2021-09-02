@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+"""
+dope score calculation
+"""
+
 from modeller import *
 from modeller.scripts import complete_pdb
 

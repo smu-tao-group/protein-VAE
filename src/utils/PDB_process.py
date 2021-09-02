@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+"""
+PDB_process class
+"""
+
 class Protein():
     """Extract a PDB template and write a set of new coordinates
     into the template PDB.

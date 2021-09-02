@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+"""
+align simulation trajs
+"""
+
 import MDAnalysis as mda
 from MDAnalysis.analysis import align
 

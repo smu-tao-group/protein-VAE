@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+"""
+train VAE model
+"""
+
 import numpy as np
 import pickle
 from sklearn.preprocessing import MinMaxScaler

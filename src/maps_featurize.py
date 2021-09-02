@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+"""
+extract xyz coordinates from trajs
+"""
+
 import pickle
 import numpy as np
 import mdtraj as md
