@@ -1,0 +1,6 @@
+
+MDAnalysis
+numpy
+mdtraj
+tensorflow
+scikit-learn
