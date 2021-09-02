@@ -20,4 +20,6 @@ jobs:
         pip install pylint
     - name: Analyze python codes
       run: |
-        pylint `ls -R|grep .py$|xargs`
+        # check all py files except for the DOPE score one
+        # which needs to manually insert a license key
+        pylint `find . -name '*.py' ! '(' -name '*DOPE*' ')'`
