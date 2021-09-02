@@ -1,6 +1,11 @@
-name: Pylint
+name: Check code styling
 
-on: [push]
+on:
+  push:
+    branches:
+    - main
+    paths:
+    - src/*
 
 jobs:
   build:
