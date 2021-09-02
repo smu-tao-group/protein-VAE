@@ -27,4 +27,5 @@ jobs:
       run: |
         # check all py files except for the DOPE score one
         # which needs to manually insert a license key
-        pylint `find . -name '*.py' ! '(' -name '*DOPE*' ')'`
+        # fail under 6/10
+        pylint --fail-under=6 `find . -name '*.py' ! '(' -name '*DOPE*' ')'`
