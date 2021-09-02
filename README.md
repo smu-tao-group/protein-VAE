@@ -14,3 +14,9 @@
 1. PDB_process.py: extract PDB template and write new coordinates
 2. DOPE.py: calculate DOPE score of the given PDB
 3. evaluation.py: evaluate the performance of VAE/AE models
+
+## Dependencies
+
+The dependencies are listed in `requirements.txt` file. 
+
+For DOPE score calculation, `modeller` is required and can be downloaded [here](https://salilab.org/modeller/download_installation.html).  
