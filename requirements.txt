@@ -1,0 +1,5 @@
+numpy
+MDAnalysis==1.1.1
+mdtraj==1.9.5
+tensorflow==2.4.1
+scikit-learn==0.23.2
