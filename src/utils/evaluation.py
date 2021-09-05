@@ -4,10 +4,10 @@
 model performance evaluation class
 """
 
+import os
 import numpy as np
 from sklearn.metrics.pairwise import euclidean_distances
 from scipy.stats import spearmanr, pearsonr
-import os
 from utils.PDB_process import Protein
 from utils.DOPE_score import DOPE
 
