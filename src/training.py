@@ -4,8 +4,8 @@
 train VAE model
 """
 
-import numpy as np
 import pickle
+import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 from models import build_vae
 
@@ -28,22 +28,22 @@ del maps, maps_scale
 
 # set params
 original_dim = x_train.shape[1]
-batch_size = 64
-latent_dim = 2
-num_hidden_layer = 4
-epochs = 200
+BATCH_SIZE = 64
+LATENT_DIM = 2
+NUM_HIDDEN_LAYER = 4
+EPOCHS = 200
 
 # build VAE models #
-encoder, decoder, vae = build_vae(original_dim, latent_dim, num_hidden_layer)
+encoder, decoder, vae = build_vae(original_dim, LATENT_DIM, NUM_HIDDEN_LAYER)
 
 # train VAE
 vae.fit(x=x_train, y=x_train,
         shuffle=True,
-        epochs=epochs,
-        batch_size=batch_size,
+        epochs=EPOCHS,
+        batch_size=BATCH_SIZE,
         validation_data=(x_test, x_test))
 
-encoded = encoder.predict(x_train, batch_size=batch_size)
+encoded = encoder.predict(x_train, batch_size=BATCH_SIZE)
 pickle.dump(encoded, open("../results/encoded.pkl", "wb"))
 
 # save models
