@@ -1,5 +1,7 @@
 # Explore protein conformational space with variational autoencoder
 
+[![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/release/python-360/) [![Apache license](https://img.shields.io/github/license/smu-tao-group/protein-VAE)]() [![Paper DOI](https://zenodo.org/badge/DOI/10.33774/chemrxiv-2021-mb1f5.svg)](https://chemrxiv.org/engage/chemrxiv/article-details/6149299187a02de46f4294ec)
+
 ## File explanation
 
 ### Main
@@ -20,3 +22,7 @@
 The dependencies are listed in `requirements.txt` file. 
 
 For DOPE score calculation, `modeller` is required and can be downloaded [here](https://salilab.org/modeller/download_installation.html).  
+
+## License
+
+Apache-2.0
